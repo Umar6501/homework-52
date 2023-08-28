@@ -3,16 +3,15 @@ const products = [
     id: 1,
     name: "Apple",
     category: "Fruit",
-    description:
-      "A round fruit with a red, green known for its high nutrient content, or yellow ",
+    description: "A round fruit with a red, green, or yellow ",
     price: 89,
     rating: 5,
     discount: 0,
     images: [
-      "../assets/images/products/1.png",
-      "../assets/images/products/2.png",
-      "../assets/images/products/3.png",
-      "../assets/images/products/4.png",
+      "../fonts/images/products/1.png",
+      "../fonts/images/products/2.png",
+      "../fonts/images/products/3.png",
+      "../fonts/images/products/4.png",
     ],
   },
   {
@@ -20,12 +19,12 @@ const products = [
     name: "Banana",
     category: "Fruit",
     description:
-      "A long, curved fruit with sweet, creamy white flesh known dear for its high nutrient content..",
+      "A long, curved fruit with a yellow skin and sweet, creamy white flesh.",
     price: 71,
     rating: 5,
     discount: 20,
     images: [
-      "../assets/images/products/2.png",
+      "../fonts/images/products/2.png",
       "../assets/images/products/3.png",
       "../assets/images/products/4.png",
       "../assets/images/products/5.png",
@@ -36,12 +35,12 @@ const products = [
     name: "Bread",
     category: "Bakery",
     description:
-      "A staple food made from and yeast, baked into a loaf known for its high nutrient content.",
+      "A staple food made from flour, water, and yeast, baked into a loaf.",
     price: 88,
     rating: 5,
     discount: 20,
     images: [
-      "../assets/images/products/3.png",
+      "../fonts/images/products/3.png",
       "../assets/images/products/4.png",
       "../assets/images/products/5.png",
       "../assets/images/products/6.png",
@@ -57,7 +56,7 @@ const products = [
     rating: 4.5,
     discount: 20,
     images: [
-      "../assets/images/products/4.png",
+      "../fonts/images/products/4.png",
       "../assets/images/products/5.png",
       "../assets/images/products/6.png",
       "../assets/images/products/7.png",
@@ -68,12 +67,12 @@ const products = [
     name: "Carrot",
     category: "Vegetable",
     description:
-      "A root vegetable texture  known for its high nutrient content. and a sweet, earthy flavor.",
+      "A root vegetable with a crunchy texture and a sweet, earthy flavor.",
     price: 82,
     rating: 5,
     discount: 20,
     images: [
-      "../assets/images/products/5.png",
+      "../fonts/images/products/5.png",
       "../assets/images/products/6.png",
       "../assets/images/products/7.png",
       "../assets/images/products/8.png",
@@ -89,7 +88,7 @@ const products = [
     rating: 3.5,
     discount: 50,
     images: [
-      "../assets/images/products/6.png",
+      "../fonts/images/products/6.png",
       "../assets/images/products/7.png",
       "../assets/images/products/8.png",
       "../assets/images/products/9.png",
@@ -100,12 +99,12 @@ const products = [
     name: "Chicken",
     category: "Meat",
     description:
-      "A type of poultry, often high nutrient content. as a source of protein in meals.",
+      "A type of poultry, often used as a source of protein in meals.",
     price: 68,
     rating: 3.5,
     discount: 20,
     images: [
-      "../assets/images/products/7.png",
+      "../fonts/images/products/7.png",
       "../assets/images/products/8.png",
       "../assets/images/products/9.png",
       "../assets/images/products/10.png",
@@ -121,7 +120,7 @@ const products = [
     rating: 4.5,
     discount: 20,
     images: [
-      "../assets/images/products/8.png",
+      "../fonts/images/products/8.png",
       "../assets/images/products/9.png",
       "../assets/images/products/10.png",
       "../assets/images/products/11.png",
@@ -137,7 +136,7 @@ const products = [
     rating: 5,
     discount: 20,
     images: [
-      "../assets/images/products/9.png",
+      "../fonts/images/products/9.png",
       "../assets/images/products/10.png",
       "../assets/images/products/11.png",
       "../assets/images/products/12.png",
@@ -148,12 +147,12 @@ const products = [
     name: "Egg",
     category: "Dairy",
     description:
-      "A oval-shaped produced by birds, often used as a source of protein in meals.",
+      "A oval-shaped reproductive body produced by birds, often used as a source of protein in meals.",
     price: 79,
     rating: 4.5,
     discount: 0,
     images: [
-      "../assets/images/products/10.png",
+      "../fonts/images/products/10.png",
       "../assets/images/products/11.png",
       "../assets/images/products/12.png",
       "../assets/images/products/13.png",
@@ -169,7 +168,7 @@ const products = [
     rating: 3.5,
     discount: 50,
     images: [
-      "../assets/images/products/11.png",
+      "../fonts/images/products/11.png",
       "../assets/images/products/12.png",
       "../assets/images/products/13.png",
       "../assets/images/products/14.png",
@@ -185,7 +184,7 @@ const products = [
     rating: 4,
     discount: 20,
     images: [
-      "../assets/images/products/12.png",
+      "../fonts/images/products/12.png",
       "../assets/images/products/13.png",
       "../assets/images/products/14.png",
       "../assets/images/products/15.png",
@@ -201,7 +200,7 @@ const products = [
     rating: 5,
     discount: 0,
     images: [
-      "../assets/images/products/13.png",
+      "../fonts/images/products/13.png",
       "../assets/images/products/14.png",
       "../assets/images/products/15.png",
       "../assets/images/products/16.png",
@@ -217,7 +216,7 @@ const products = [
     rating: 4.5,
     discount: 50,
     images: [
-      "../assets/images/products/14.png",
+      "../fonts/images/products/14.png",
       "../assets/images/products/15.png",
       "../assets/images/products/16.png",
       "../assets/images/products/17.png",
@@ -233,7 +232,7 @@ const products = [
     rating: 4.5,
     discount: 0,
     images: [
-      "../assets/images/products/15.png",
+      "../fonts/images/products/15.png",
       "../assets/images/products/16.png",
       "../assets/images/products/17.png",
       "../assets/images/products/18.png",
@@ -249,7 +248,7 @@ const products = [
     rating: 3.5,
     discount: 0,
     images: [
-      "../assets/images/products/16.png",
+      "../fonts/images/products/16.png",
       "../assets/images/products/17.png",
       "../assets/images/products/18.png",
       "../assets/images/products/19.png",
@@ -260,12 +259,12 @@ const products = [
     name: "Eggs",
     category: "Dairy",
     description:
-      "Eggs are oval structures produced by female birds and some reptiles.",
+      "Eggs are oval-shaped reproductive structures produced by female birds and some reptiles.",
     price: 70,
     rating: 4.5,
     discount: 50,
     images: [
-      "../assets/images/products/17.png",
+      "../fonts/images/products/17.png",
       "../assets/images/products/18.png",
       "../assets/images/products/19.png",
       "../assets/images/products/20.png",
@@ -281,7 +280,7 @@ const products = [
     rating: 4,
     discount: 0,
     images: [
-      "../assets/images/products/18.png",
+      "../fonts/images/products/18.png",
       "../assets/images/products/19.png",
       "../assets/images/products/20.png",
       "../assets/images/products/21.png",
@@ -292,15 +291,287 @@ const products = [
     name: "Ice Cream",
     category: "Dessert",
     description:
-      "Ice cream  known for its high nutrient content. made from cream, sugar, and flavorings.",
+      "Ice cream is a frozen dessert made from cream, sugar, and flavorings.",
     price: 83,
     rating: 4.5,
     discount: 0,
     images: [
-      "../assets/images/products/19.png",
+      "../fonts/images/products/19.png",
       "../assets/images/products/20.png",
       "../assets/images/products/21.png",
       "../assets/images/products/22.png",
+    ],
+  },
+  {
+    id: 20,
+    name: "Jelly",
+    category: "Fruit",
+    description:
+      "Jelly is a sweet spread made from fruit juice and sugar, often used as a topping for toast or pastries.",
+    price: 76,
+    rating: 5,
+    discount: 0,
+    images: [
+      "../fonts/images/products/20.png",
+      "../assets/images/products/21.png",
+      "../assets/images/products/22.png",
+      "../assets/images/products/23.png",
+    ],
+  },
+  {
+    id: 21,
+    name: "Ketchup",
+    category: "Dairy",
+    description:
+      "Ketchup is a tangy sauce made from tomatoes, vinegar, sugar, and spices.",
+    price: 77,
+    rating: 5,
+    discount: 0,
+    images: [
+      "../fonts/images/products/21.png",
+      "../assets/images/products/22.png",
+      "../assets/images/products/23.png",
+      "../assets/images/products/24.png",
+    ],
+  },
+  {
+    id: 22,
+    name: "Mango",
+    category: "Fruit",
+    description:
+      "Mangoes are juicy, sweet tropical fruits with a fleshy interior and a large, oblong seed in the center.",
+    price: 80,
+    rating: 5,
+    discount: 20,
+    images: [
+      "../fonts/images/products/22.png",
+      "../assets/images/products/23.png",
+      "../assets/images/products/24.png",
+      "../assets/images/products/25.png",
+    ],
+  },
+  {
+    id: 23,
+    name: "Noodles",
+    category: "Meat",
+    description:
+      "Noodles are a type of pasta made from wheat flour and water, often used in Asian cuisine.",
+    price: 93,
+    rating: 3.5,
+    discount: 20,
+    images: [
+      "../fonts/images/products/23.png",
+      "../assets/images/products/24.png",
+      "../assets/images/products/25.png",
+      "../assets/images/products/26.png",
+    ],
+  },
+  {
+    id: 24,
+    name: "Oatmeal",
+    category: "Breakfast",
+    description:
+      "Oatmeal is a type of porridge made from oats that is often served for breakfast.",
+    price: 94,
+    rating: 4.5,
+    discount: 0,
+    images: [
+      "../fonts/images/products/24.png",
+      "../assets/images/products/25.png",
+      "../assets/images/products/26.png",
+      "../assets/images/products/27.png",
+    ],
+  },
+  {
+    id: 25,
+    name: "Bacon",
+    category: "Breakfast",
+    description:
+      "Bacon is a popular breakfast food made from cured pork belly, it is newly delivered.",
+    price: 71,
+    rating: 3.5,
+    discount: 20,
+    images: [
+      "../fonts/images/products/25.png",
+      "../assets/images/products/26.png",
+      "../assets/images/products/27.png",
+      "../assets/images/products/28.png",
+    ],
+  },
+  {
+    id: 26,
+    name: "Pancakes",
+    category: "Breakfast",
+    description:
+      "Pancakes are a popular breakfast food made from flour, eggs, and milk.",
+    price: 63,
+    rating: 4,
+    discount: 0,
+    images: [
+      "../fonts/images/products/26.png",
+      "../assets/images/products/27.png",
+      "../assets/images/products/28.png",
+      "../assets/images/products/29.png",
+    ],
+  },
+  {
+    id: 27,
+    name: "Waffles",
+    category: "Breakfast",
+    description:
+      "Waffles are a type of breakfast food made from batter cooked in a waffle iron.",
+    price: 97,
+    rating: 4.5,
+    discount: 20,
+    images: [
+      "../fonts/images/products/27.png",
+      "../assets/images/products/28.png",
+      "../assets/images/products/29.png",
+      "../assets/images/products/30.png",
+    ],
+  },
+  {
+    id: 28,
+    name: "Fried Rice",
+    category: "Lunch",
+    description:
+      "Fried Rice is a type of rice dish that is stir-fried in a pan with oil and other ingredients.",
+    price: 81,
+    rating: 4,
+    discount: 20,
+    images: [
+      "../fonts/images/products/28.png",
+      "../assets/images/products/29.png",
+      "../assets/images/products/30.png",
+      "../assets/images/products/31.png",
+    ],
+  },
+  {
+    id: 29,
+    name: "Spaghetti",
+    category: "Lunch",
+    description:
+      "Spaghetti is a type of pasta made from wheat flour and water, usually served with sauce.",
+    price: 96,
+    rating: 3,
+    discount: 50,
+    images: [
+      "../fonts/images/products/29.png",
+      "../assets/images/products/30.png",
+      "../assets/images/products/31.png",
+      "../assets/images/products/32.png",
+    ],
+  },
+  {
+    id: 30,
+    name: "Pizza",
+    category: "Lunch",
+    description:
+      "Pizza is a popular dish made from dough, sauce, cheese, and toppings.",
+    price: 95,
+    rating: 4,
+    discount: 0,
+    images: [
+      "../fonts/images/products/30.png",
+      "../assets/images/products/31.png",
+      "../assets/images/products/32.png",
+      "../assets/images/products/33.png",
+    ],
+  },
+  {
+    id: 31,
+    name: "Grilled Cheese",
+    category: "Lunch",
+    description:
+      "A grilled cheese sandwich is a hot sandwich made from cheese and bread.",
+    price: 100,
+    rating: 5,
+    discount: 50,
+    images: [
+      "../fonts/images/products/31.png",
+      "../assets/images/products/32.png",
+      "../assets/images/products/33.png",
+      "../assets/images/products/34.png",
+    ],
+  },
+  {
+    id: 32,
+    name: "Steak",
+    category: "Dinner",
+    description:
+      "Steak is a popular dinner dish made from a cut of beef that is usually grilled or pan-fried.",
+    price: 63,
+    rating: 4.5,
+    discount: 20,
+    images: [
+      "../fonts/images/products/32.png",
+      "../assets/images/products/33.png",
+      "../assets/images/products/34.png",
+      "../assets/images/products/35.png",
+    ],
+  },
+  {
+    id: 33,
+    name: "Salmon",
+    category: "Dinner",
+    description:
+      "Salmon is a type of fish that is often grilled or baked and served as a main course.",
+    price: 82,
+    rating: 4.5,
+    discount: 20,
+    images: [
+      "../fonts/images/products/33.png",
+      "../assets/images/products/34.png",
+      "../assets/images/products/35.png",
+      "../assets/images/products/36.png",
+    ],
+  },
+  {
+    id: 34,
+    name: "Chicken Alfredo",
+    category: "Dinner",
+    description:
+      "Chicken Alfredo is a pasta dish made with chicken, alsjfkdlkasdfhlkjh.",
+    price: 94,
+    rating: 4,
+    discount: 20,
+    images: [
+      "../fonts/images/products/34.png",
+      "../assets/images/products/35.png",
+      "../assets/images/products/36.png",
+      "../assets/images/products/1.png",
+    ],
+  },
+  {
+    id: 35,
+    name: "Lasagna",
+    category: "Dinner",
+    description:
+      "Lasagna is a type of pasta dish made with layers of pasta, sauce, cheese, and meat or vegetables.",
+    price: 70,
+    rating: 1,
+    discount: 0,
+    images: [
+      "../fonts/images/products/35.png",
+      "../assets/images/products/36.png",
+      "../assets/images/products/1.png",
+      "../assets/images/products/2.png",
+    ],
+  },
+  {
+    id: 36,
+    name: "Chocolate Chip Cookies",
+    category: "Dessert",
+    description:
+      "Chocolate Chip Cookies are a type of cookie made from flour, sugar, butter, and chocolate chips.",
+    price: 98,
+    rating: 3.5,
+    discount: 0,
+    images: [
+      "../fonts/images/products/36.png",
+      "../assets/images/products/1.png",
+      "../assets/images/products/2.png",
+      "../assets/images/products/3.png",
     ],
   },
 ];
@@ -311,12 +582,12 @@ products.map((product) => {
   str += `
   <div class="card">
   <div class="card-img">
-    <img src="${product.images}" alt="" class="big-img"/>
+    <img src="${product.images[0]}" alt="" class="big-img"/>
 
     <button class="like">
       <img
         src="../fonts/images/articles/Aktsiya-card-like.img"
-        alt="icon"
+        alt="icon" 
       />
     </button>
   </div>
@@ -345,7 +616,7 @@ products.map((product) => {
       </div>
     </div>
     <div class="big-btn">
-      <button>В корзину</button>
+      <button class="btn-11">В корзину</button>
     </div>
   </div>
 </div>

@@ -1,11 +1,24 @@
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Rubik", sans-serif;
+}
+a {
+  font-family: "Rubik", sans-serif;
+}
+p {
+  font-family: "Rubik", sans-serif;
+}
+
 main {
   padding-top: 93px;
+  .background-img {
+    width: 100%;
+    height: 200px;
+  }
   .hero-section {
-    .background-img {
-      width: 1515px;
-      margin-left: -160px;
-      position: relative;
-    }
     .hero-content {
       display: flex;
       align-items: center;
@@ -23,8 +36,20 @@ main {
     }
     // margin-bottom: 80px;
   }
+  .pages-on_off-bottoms {
+    background: var(--main-bg-page, #fbf8ec);
+    .on-off {
+      padding-top: 23px;
+      padding-bottom: 23px;
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      gap: 7px;
+      justify-content: start;
+    }
+  }
   .aktsiya {
-    padding-top: 80px;
+    padding-top: 40px;
     background: var(--main-bg-page, #fbf8ec);
 
     .par {
@@ -51,42 +76,50 @@ main {
     }
     .cards {
       display: flex;
-      column-gap: 40px;
+      column-gap: 35px;
       .card {
+        width: 272px;
+        height: 354px;
+        padding: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        transition: 0.2s;
+
         border-radius: 4px;
         background: var(--main-surface, #fff);
         box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.1);
-        width: 272px;
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        transition: 0.2s;
-        padding: 5px;
         &:hover {
           box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.4);
         }
 
         .card-img {
+          position: relative;
+          .big-img {
+            // width: 272px;
+            height: 160px;
+          }
+          .chegirma {
+            position: absolute;
+            top: 127px;
+            left: 13px;
+          }
           .like {
-            display: flex;
+            position: absolute;
             border-radius: 4px;
             opacity: 0.5;
+            z-index: 99;
+            height: 32px;
+            width: 32px;
             background: var(--grayscale-lightest, #f3f2f1);
             border: none;
-            margin-top: -175px;
-            margin-bottom: 131px;
-            margin-left: 238px;
+            top: 11px;
+            right: 10px;
             &:hover {
               cursor: pointer;
             }
-          }
-          .chegirma {
-            display: flex;
-            margin-top: -50px;
-            margin-bottom: 30px;
-            margin-left: 5px;
           }
         }
         .card-content {
@@ -94,7 +127,7 @@ main {
           flex-direction: column;
           .content1 {
             display: flex;
-            column-gap: 170px;
+            column-gap: 134px;
             h2 {
               color: var(--main-on-surface, #414141);
               font-size: 18px;
@@ -110,14 +143,14 @@ main {
           }
           .content2 {
             display: flex;
-            column-gap: 170px;
+            column-gap: 142px;
             p {
               color: var(--grayscale-light, #bfbfbf);
               font-size: 12px;
               font-weight: 400;
               line-height: 150%;
             }
-            margin-bottom: 8px;
+            margin-bottom: 10px;
           }
           .content3 {
             color: var(--main-on-surface, #414141);
@@ -139,8 +172,8 @@ main {
                 cursor: pointer;
               }
             }
-            margin-top: 8px;
-            margin-bottom: 8px;
+            margin-top: 10px;
+            margin-bottom: 10px;
           }
           .big-btn {
             button {
@@ -186,6 +219,8 @@ main {
         }
       }
       h1 {
+        font-family: "Rubik", sans-serif;
+
         color: var(--main-on-surface, #414141);
         font-size: 36px;
         font-weight: 700;
@@ -195,33 +230,42 @@ main {
     }
     .cards {
       display: flex;
-      column-gap: 40px;
+      column-gap: 35px;
       .card {
+        width: 272px;
+        height: 354px;
+        padding: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        transition: 0.2s;
+
         border-radius: 4px;
         background: var(--main-surface, #fff);
         box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.1);
-        width: 272px;
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        transition: 0.2s;
-        padding: 5px;
         &:hover {
           box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.4);
         }
 
         .card-img {
+          position: relative;
+          .big-img {
+            // width: 272px;
+            height: 160px;
+          }
           .like {
-            display: flex;
+            position: absolute;
             border-radius: 4px;
             opacity: 0.5;
+            z-index: 99;
+            height: 32px;
+            width: 32px;
             background: var(--grayscale-lightest, #f3f2f1);
             border: none;
-            margin-top: -155px;
-            margin-bottom: 131px;
-            margin-left: 238px;
+            top: 11px;
+            right: 10px;
             &:hover {
               cursor: pointer;
             }
@@ -235,9 +279,12 @@ main {
             margin-bottom: 26px;
             h2 {
               color: var(--main-on-surface, #414141);
+              /* Desc/Text-Bold/M */
+              font-family: Rubik;
               font-size: 18px;
+              font-style: normal;
               font-weight: 700;
-              line-height: 150%;
+              line-height: 27px;
             }
           }
           .content3 {
@@ -245,15 +292,14 @@ main {
             font-size: 16px;
             font-weight: 400;
             line-height: 150%;
-            p {
-              width: 230px;
-            }
           }
           .stars {
             display: flex;
             column-gap: 3px;
 
             button {
+              font-family: "Rubik", sans-serif;
+
               background-color: transparent;
               border: none;
               &:hover {
@@ -316,12 +362,13 @@ main {
     }
     .cards {
       display: flex;
-      column-gap: 40px;
+      column-gap: 35px;
       .card {
         border-radius: 4px;
         background: var(--main-surface, #fff);
         box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.1);
         width: 272px;
+        height: 354px;
         position: relative;
         display: flex;
         flex-direction: column;
@@ -334,15 +381,21 @@ main {
         }
 
         .card-img {
+          .big-img {
+            // width: 272px;
+            height: 160px;
+          }
           .like {
-            display: flex;
+            position: absolute;
             border-radius: 4px;
             opacity: 0.5;
+            z-index: 99;
+            height: 32px;
+            width: 32px;
             background: var(--grayscale-lightest, #f3f2f1);
             border: none;
-            margin-top: -155px;
-            margin-bottom: 131px;
-            margin-left: 238px;
+            top: 11px;
+            right: 10px;
             &:hover {
               cursor: pointer;
             }
@@ -359,6 +412,7 @@ main {
               font-size: 18px;
               font-weight: 700;
               line-height: 150%;
+              font-family: "Rubik", sans-serif;
             }
           }
           .content3 {
@@ -366,9 +420,6 @@ main {
             font-size: 16px;
             font-weight: 400;
             line-height: 150%;
-            p {
-              width: 230px;
-            }
           }
           .stars {
             display: flex;
@@ -377,10 +428,13 @@ main {
             button {
               background-color: transparent;
               border: none;
+
               &:hover {
                 cursor: pointer;
               }
             }
+            font-family: "Rubik", sans-serif;
+
             margin-top: 8px;
             margin-bottom: 8px;
           }
@@ -415,6 +469,8 @@ main {
 
     .par {
       h1 {
+        font-family: "Rubik", sans-serif;
+
         color: var(--main-on-surface, #414141);
         font-size: 36px;
         font-weight: 700;
@@ -426,11 +482,13 @@ main {
       display: flex;
       column-gap: 40px;
       .box {
+        display: flex;
+        align-items: center;
         border-radius: 4px;
         background: var(--main-primary-muted, #fcd5ba);
         box-shadow: 0px 8px 16px 0px rgba(202, 147, 96, 0.5);
         width: 584px;
-        padding: 30px;
+        height: 200px;
         transition: 0.2s;
         &:hover {
           box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.4);
@@ -439,7 +497,10 @@ main {
           display: flex;
           align-items: center;
           .left {
+            margin-left: 30px;
             h2 {
+              font-family: "Rubik", sans-serif;
+
               color: var(--main-on-surface, #414141);
               font-size: 24px;
               font-weight: 700;
@@ -451,6 +512,18 @@ main {
               font-weight: 400;
               line-height: 150%;
               width: 258px;
+              font-family: "Rubik", sans-serif;
+            }
+          }
+          .right {
+            img {
+              width: 262.762px;
+              height: 196.159px;
+            }
+            .rp {
+              width: 176.762px;
+              height: 163.159px;
+              margin-right: 45px;
             }
           }
         }
@@ -532,7 +605,7 @@ main {
     }
     .boxes {
       display: flex;
-      column-gap: 40px;
+      column-gap: 35px;
       .box {
         display: flex;
         flex-direction: column;
@@ -565,18 +638,20 @@ main {
               font-size: 18px;
               font-weight: 700;
               line-height: 150%;
-              margin-bottom: 10px;
-              width: 300px;
+              /* margin-bottom: 10px; */
+              /* width: 300px; */
+              height: 60px;
             }
             .con3 {
               color: var(--main-on-surface, #414141);
               font-size: 16px;
               font-weight: 400;
               line-height: 150%;
-              width: 320px;
+              // width: 320px;
               margin-bottom: 10px;
             }
             button {
+              margin-top: 20px;
               color: var(--main-secondary, #70c05b);
               text-align: center;
               font-size: 16px;
@@ -593,9 +668,6 @@ main {
                 background: var(--main-secondary, #70c05b);
                 cursor: pointer;
               }
-            }
-            .btn2 {
-              margin-top: 20px;
             }
           }
         }
@@ -756,50 +828,49 @@ main {
     }
     .articles {
       .boxes {
-        display: flex ;
+        display: flex;
         flex-direction: column;
-      margin-left: 0px;
-      width: 300px;
-      .box{
-        width: 300px !important;
-        .box-img{
-          img{
-            width: 300px;
-
-          }
-          .box-content{
-            .con3{
-              width: 200px;
+        margin-left: 0px;
+        width: 300px;
+        .box {
+          width: 300px !important;
+          .box-img {
+            img {
+              width: 300px;
+            }
+            .box-content {
+              .con3 {
+                width: 200px;
+              }
             }
           }
         }
       }
-      }
     }
   }
-  footer{
-   .big-div{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    .footer-links{
-      width: 300px;
+  footer {
+    .big-div {
       display: flex;
-      flex-wrap: wrap;
-      // row-gap: 10px;
-    .logo{
-      margin-bottom: -30px;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      .footer-links {
+        width: 300px;
+        display: flex;
+        flex-wrap: wrap;
+        // row-gap: 10px;
+        .logo {
+          margin-bottom: -30px;
+        }
+      }
+      .icons {
+        margin-left: 0px;
+        margin-top: 20px;
+      }
+      .tel {
+        margin-left: 0px;
+        margin-top: 20px;
+      }
     }
-    }
-    .icons{
-      margin-left: 0px;
-      margin-top: 20px;
-    }
-    .tel{
-      margin-left: 0px;
-      margin-top: 20px;
-    }
-   }
   }
 }

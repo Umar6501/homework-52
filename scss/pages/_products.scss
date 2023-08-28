@@ -70,14 +70,16 @@
             height: 160px;
           }
           .like {
-            display: flex;
+            position: absolute;
             border-radius: 4px;
             opacity: 0.5;
+            z-index: 99;
+            height: 32px;
+            width: 32px;
             background: var(--grayscale-lightest, #f3f2f1);
             border: none;
-            margin-top: -21px;
-            margin-bottom: 131px;
-            margin-left: 210px;
+            top: 11px;
+            right: 10px;
             &:hover {
               cursor: pointer;
             }
@@ -104,7 +106,8 @@
             font-family: "Rubik", sans-serif;
 
             p {
-              width: 230px;
+              width: 249px;
+              height: 72px;
               font-family: "Rubik", sans-serif;
             }
           }
@@ -168,7 +171,7 @@
       }
     }
   }
-  button {
+  .btn-11 {
     border-radius: 4px;
     background: #fff;
     padding: 1px 12px 1px 13px;

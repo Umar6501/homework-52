@@ -5,7 +5,11 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
+  <title>Все продукты</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;900&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="../scss/style.css" />
 </head>
 
@@ -23,7 +27,7 @@
           </button>
           <form action="/action_page.php">
             <input type="text" name="fname" placeholder="Найти товар" />
-            <img src="../fonts/images/articles/search.png" alt="" class="res-imge" />
+            <img src="../fonts/images/articles/search.svg" alt="" class="res-imge" />
           </form>
           <div class="nav-links">
             <div class="nav-link">
@@ -42,10 +46,48 @@
               </a>
             </div>
           </div>
-          <div class="nav-person">
-            <img src="../fonts/images/articles/avatar.svg" alt="icon" width="40" height="40" />
-            <p>John</p>
-            <img src="../fonts/images/articles/chevron-down.svg" alt="" />
+          <div class="modal-section">
+            <a href="#" id="modal1" class="nav-person">
+              <img src="../fonts/images/articles/avatar.svg" alt="icon" width="40" height="40" />
+              <p>John</p>
+              <img src="../fonts/images/articles/chevron-down.svg" alt="" />
+            </a>
+            <div class="modal">
+              <div class="modal-content">
+                <div class="modal-item1">
+                  <a href="#" id="btn-close">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M18.3536 5.64645C18.5488 5.84171 18.5488 6.15829 18.3536 6.35355L6.35355 18.3536C6.15829 18.5488 5.84171 18.5488 5.64645 18.3536C5.45118 18.1583 5.45118 17.8417 5.64645 17.6464L17.6464 5.64645C17.8417 5.45118 18.1583 5.45118 18.3536 5.64645Z"
+                        fill="#414141" />
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M5.64645 5.64645C5.84171 5.45118 6.15829 5.45118 6.35355 5.64645L18.3536 17.6464C18.5488 17.8417 18.5488 18.1583 18.3536 18.3536C18.1583 18.5488 17.8417 18.5488 17.6464 18.3536L5.64645 6.35355C5.45118 6.15829 5.45118 5.84171 5.64645 5.64645Z"
+                        fill="#414141" />
+                    </svg>
+                  </a>
+
+                </div>
+                <div class="modal-item2">
+                  <h1>
+                    Вход
+                  </h1>
+                </div>
+                <div class="modal-item3">
+                  <h2>Телефон</h2>
+                  <div class="input-item">
+                    <h3>+7 912</h3>
+                    <input type="text" name="" id="" placeholder="___-__-__">
+                  </div>
+                </div>
+                <div class="modal-item4">
+                  <a href="#">Вход</a>
+                </div>
+                <div class="modal-item5">
+                  <a href="#">Регистрация</a>
+                  <a href="#">Забыли пароль?</a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </nav>
@@ -75,6 +117,17 @@
     </div>
   </header>
   <main class="products">
+    <section class="on_off-sec">
+      <div class="container">
+        <div class="on_off">
+          <a href="../index.html" style="color: gray;">Главный</a>
+          <p> > </p>
+          <a href="#">Все продукты</a>
+        </div>
+
+      </div>
+
+    </section>
     <section class="hero">
       <div class="container">
         <div class="par">
