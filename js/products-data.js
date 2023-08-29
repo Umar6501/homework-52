@@ -563,7 +563,7 @@ const products = [
     name: "Chocolate Chip Cookies",
     category: "Dessert",
     description:
-      "Chocolate Chip Cookies are a type of cookie made from flour, sugar, butter, and chocolate chips.",
+      "Chocolate Chip Cookies are a type of cookie made, sugar, butter, and chocolate chips.",
     price: 98,
     rating: 3.5,
     discount: 0,
