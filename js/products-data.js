@@ -1,4 +1,4 @@
-const products = [
+const allProducts = [
   {
     id: 1,
     name: "Apple",
@@ -576,21 +576,25 @@ const products = [
   },
 ];
 
-const cards = document.querySelector(".cards");
-let str = "";
-products.map((product) => {
-  str += `
-  <div class="card">
-  <div class="card-img">
-    <img src="${product.images[0]}" alt="" class="big-img"/>
+const searchInput = document.getElementById("search-input");
+const rowProducts = document.querySelector(".cards");
 
-    <button class="like">
-      <img
-        src="../fonts/images/articles/Aktsiya-card-like.img"
-        alt="icon" 
-      />
-    </button>
-  </div>
+function displayProducts(allProducts) {
+  rowProducts.innerHTML = "";
+  let str = "";
+  allProducts.map((product) => {
+    str += `
+           <div class="card">
+           <div class="card-img">
+             <img src="${product.images[0]}" alt="" class="big-img"/>
+
+             <button class="like">
+            <img
+             src="../fonts/images/articles/Aktsiya-card-like.img"
+            alt="icon" 
+            />
+         </button>
+         </div>
   <div class="card-content">
     <div class="content1">
       <h2>${product.price}</h2>
@@ -616,10 +620,40 @@ products.map((product) => {
       </div>
     </div>
     <div class="big-btn">
-      <button class="btn-11">В корзину</button>
+      <button class="btn-11" onclick="addToCart(${product.id})">В корзину</button>
     </div>
   </div>
 </div>
 `;
+  });
+  rowProducts.innerHTML = str;
+}
+
+displayProducts(allProducts);
+
+function displaySearchedProducts(query) {
+  const filteredProducts = allProducts.filter(
+    (p) =>
+      p.name.toLowerCase().includes(query.toLowerCase()) ||
+      p.description.toLowerCase().includes(query.toLowerCase())
+  );
+  displayProducts(filteredProducts);
+}
+
+searchInput.addEventListener("keyup", function (e) {
+  displaySearchedProducts(e.target.value);
 });
-cards.innerHTML = str;
+
+// /////////
+function addToCart(id) {
+  let cart = JSON.parse(localStorage.getItem("cartProducts")) || [];
+  let prod = allProducts.find((p) => p.id === id);
+  console.log(prod);
+  if (!cart.includes(prod)) {
+    cart.push({
+      ...prod,
+      numberOfProduct: 1,
+    });
+  }
+  localStorage.setItem("cartProducts", JSON.stringify(cart));
+}
